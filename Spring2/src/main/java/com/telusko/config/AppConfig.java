@@ -1,13 +1,25 @@
 package com.telusko.config;
 
+import com.telusko.Alien;
+import com.telusko.Computer;
 import com.telusko.Desktop;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import com.telusko.Laptop;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
 
 @Configuration
+@ComponentScan("com.telusko")
 public class AppConfig {
-    @Bean
-    public Desktop desktop(){
-        return new Desktop();
-    }
+
 }
+
+
+
+
+
+
+
+
+
+

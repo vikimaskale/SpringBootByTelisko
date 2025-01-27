@@ -1,7 +1,10 @@
 package com.telusko;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+@Component
 public class Laptop implements Computer {
-    Laptop(){
+    public Laptop(){
         System.out.println("Laptop obj created");
     }
     @Override
@@ -9,3 +12,11 @@ public class Laptop implements Computer {
         System.out.println("compiling using Laptop...");
     }
 }
+
+
+
+
+
+
+
+
